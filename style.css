@@ -3,7 +3,7 @@
 /* Set a soft green background for the whole page */
 body {
   background-color: #dff6e3; /* Light green */
-  font-family: Arial, sans-serif;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, Arial, sans-serif; /* Cute font */
 }
 
 /* Style for the profile picture */
@@ -14,69 +14,88 @@ body {
 }
 
 .profile-pic img {
-  width: 150px; /* Set the size of the profile picture */
-  height: 150px;
+  width: 240px;  /* Bigger profile picture */
+  height: 240px;
   border-radius: 50%; /* Make the image round */
-  border: 3px solid #8ec07c; /* Animal Crossing green border */
+  border: 4px dashed #8ec07c; /* Dashed green border for a playful look */
   background-color: #fffbe6; /* Soft yellow background */
-  padding: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 16px #b7eacb; /* Soft shadow for a floating effect */
 }
 
 /* Style for the header (your name) */
 h1 {
   text-align: center;
   margin-top: 10px;
-  font-size: 2em;
+  font-size: 2.2em;
   color: #5e4630; /* Brown, like tree trunks */
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   width: 100%; /* Full width */
+  text-shadow: 2px 2px 0 #fffbe6; /* Soft shadow for a cute effect */
 }
 
 /* Style for the bio section */
 .bio {
   text-align: center;
   margin: 20px 0;
-  font-size: 1.1em;
+  font-size: 1.15em;
   color: #4b6043; /* Dark green */
   background-color: #fffbe6; /* Soft yellow */
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 16px;
+  padding: 16px;
   width: 100%; /* Full width */
   box-sizing: border-box; /* Include padding in width */
+  border: 2px dotted #8ec07c; /* Dotted border for cuteness */
 }
 
 /* Style for the links section */
 .links {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 24px;
   width: 100%; /* Full width */
 }
 
 .links a {
-  margin: 0 10px;
+  margin: 0 12px;
   text-decoration: none; /* Remove underline */
   color: #3b8c6e; /* Animal Crossing teal */
   font-weight: bold;
   background-color: #f7e1c6; /* Light tan */
-  padding: 6px 14px;
-  border-radius: 8px;
-  transition: background 0.2s, color 0.2s;
+  padding: 10px 18px;
+  border-radius: 16px;
+  border: 2px solid #8ec07c;
+  box-shadow: 1px 2px 0 #fffbe6;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  font-family: inherit;
 }
 
-/* Change link color when hovered */
 .links a:hover {
   color: #fffbe6; /* Soft yellow */
   background-color: #8ec07c; /* Animal Crossing green */
+  transform: scale(1.08) rotate(-2deg); /* Slight pop and tilt */
 }
 
 /* Style for the section with profile picture and name */
 .profile-header {
   background-color: #f7e1c6; /* Light tan background */
   border: 3px solid #8ec07c; /* Green border */
+  border-radius: 24px;       /* More rounded corners */
+  width: 100%;               /* Full width */
+  margin: 30px 0 0 0;        /* Space above, no auto centering */
+  padding: 28px 0 18px 0;    /* More space inside the box */
+  box-sizing: border-box;    /* Include padding in width */
+  text-align: center;        /* Center the content inside */
+  box-shadow: 0 6px 24px #b7eacb; /* Soft shadow for a floating effect */
+}
+
+/* Box for the About Me section */
+.about-box {
+  background-color: #fffbe6; /* Soft yellow */
+  border: 2px dotted #8ec07c; /* Dotted green border */
   border-radius: 16px;        /* Rounded corners */
-  width: 95%;                 /* Almost full width */
-  max-width: 900px;           /* Makes the border longer horizontally */
-  margin: 30px auto 0 auto;   /* Center the box on the page */
-  padding: 20px 0;            /* Space inside the box */
+  width: 100%;                /* Full width */
   box-sizing: border-box;     /* Include padding in width */
+  text-align: center;         /* Center the text inside */
+  margin: 20px 0;             /* Space above and below */
+  padding: 16px;              /* Space inside the box */
 }
