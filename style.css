@@ -1,1 +1,82 @@
-/* Add you CSS here */
+/* Animal Crossing Theme Colors */
+
+/* Set a soft green background for the whole page */
+body {
+  background-color: #dff6e3; /* Light green */
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the profile picture */
+.profile-pic {
+  text-align: center; /* Center the image */
+  margin-top: 20px;
+  width: 100%; /* Full width */
+}
+
+.profile-pic img {
+  width: 150px; /* Set the size of the profile picture */
+  height: 150px;
+  border-radius: 50%; /* Make the image round */
+  border: 3px solid #8ec07c; /* Animal Crossing green border */
+  background-color: #fffbe6; /* Soft yellow background */
+  padding: 5px;
+}
+
+/* Style for the header (your name) */
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 2em;
+  color: #5e4630; /* Brown, like tree trunks */
+  letter-spacing: 2px;
+  width: 100%; /* Full width */
+}
+
+/* Style for the bio section */
+.bio {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.1em;
+  color: #4b6043; /* Dark green */
+  background-color: #fffbe6; /* Soft yellow */
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* Style for the links section */
+.links {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%; /* Full width */
+}
+
+.links a {
+  margin: 0 10px;
+  text-decoration: none; /* Remove underline */
+  color: #3b8c6e; /* Animal Crossing teal */
+  font-weight: bold;
+  background-color: #f7e1c6; /* Light tan */
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Change link color when hovered */
+.links a:hover {
+  color: #fffbe6; /* Soft yellow */
+  background-color: #8ec07c; /* Animal Crossing green */
+}
+
+/* Style for the section with profile picture and name */
+.profile-header {
+  background-color: #f7e1c6; /* Light tan background */
+  border: 3px solid #8ec07c; /* Green border */
+  border-radius: 16px;        /* Rounded corners */
+  width: 95%;                 /* Almost full width */
+  max-width: 900px;           /* Makes the border longer horizontally */
+  margin: 30px auto 0 auto;   /* Center the box on the page */
+  padding: 20px 0;            /* Space inside the box */
+  box-sizing: border-box;     /* Include padding in width */
+}
