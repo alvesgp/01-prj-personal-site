@@ -139,7 +139,8 @@ h1 {
   padding: 8px 18px;
   border-radius: 14px;
   background-color: #5c4326; /* Brown background */
-  transition: background 0.2s, color 0.2s;
+  /* Smoothly change background and text color when hovering */
+  transition: background-color 0.2s, color 0.2s;
   display: inline-block;
   font-family: 'Segoe UI Semibold', 'Segoe UI', Arial, sans-serif; /* Friendly font for navbar links */
 }
