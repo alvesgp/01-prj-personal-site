@@ -2,49 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <title>Giovanna's Site</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Simple navigation bar at the top -->
+  <nav class="navbar">
+    <!-- "Home" link brings you to the very top of the page -->
+    <a href="#">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#links">Links</a>
+  </nav>
+
   <!-- Profile Picture and Name Section -->
   <div class="profile-header">
     <div class="profile-pic">
-      <!-- Use your Animal Crossing image as the profile picture -->
+      <!-- Animal Crossing themed profile picture -->
       <img src="img/ACNH.PNG" alt="My Profile Picture">
     </div>
     <h1>Giovanna Alves</h1>
+    <!-- Smaller subtitle for undergraduate status -->
+    <div style="font-size: 1.2em; color: #5c4326; margin-top: 4px;">
+      Undergraduate at Virginia Commonwealth University
+    </div>
   </div>
 
-  <!-- More About Me Section (header, bio, and programming languages in one box) -->
-  <div class="about-box">
-    <h2>More About Me</h2>
+  <!-- More About Me Section (all info in a cute box) -->
+  <div class="about-box" id="about">
+    <h2 style="text-align: center; margin-bottom: 18px;">More About Me</h2>
     <p class="bio">
       Hello! I am a bioinformatics student with a concentration in computational sciences and a minor in computer science.<br>
-      I am currently learning web development with the use of HTML, CSS, and JavaScript.<br>
-      I am also interested in data science and using technology to solve real-world problems.<br>
-      In my free time, I enjoy playing video games, taking care of my pets, and spending time with my friends and family.<br>
-      I am always looking for new challenges and opportunities to learn and grow.<br>
-      I am excited to share my journey with you and hope to inspire others to pursue their passions in technology and science.<br>
+      Currently, I'm learning web development with the use of HTML, CSS, and JavaScript.<br>
+      I'm particularly interested in data science and using technology to solve real-world problems and am always looking for new challenges and opportunities to learn and grow.<br>
+      Overall, I am excited to share my journey with you!
     </p>
+
     <!-- Programming languages section -->
-    <h3>Programming Languages I Know</h3>
-    <ul style="list-style-type: none; padding-left: 0;">
-      <li>R</li>
-      <li>Python</li>
-      <li>Java</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-    <!-- Add a big space below the list -->
-    <div style="height: 100px;"></div>
+    <div class="lang-box" id="languages">
+      <!-- Make the header bigger for "Programming Languages I Know" -->
+      <h3 style="text-align: center; margin-top: 16px; margin-bottom: 23px; font-size: 1.5em;">
+        Programming Languages I Know
+      </h3>
+      <!-- Horizontal row of languages -->
+      <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 18px;">
+        <!-- R icon and label -->
+        <div style="text-align: center;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R icon" style="width: 64px; height: 64px;">
+          <div style="margin-top: 8px; font-size: 1.1em;">R</div>
+        </div>
+        <!-- Python icon and label -->
+        <div style="text-align: center;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python icon" style="width: 64px; height: 64px;">
+          <div style="margin-top: 8px; font-size: 1.1em;">Python</div>
+        </div>
+        <!-- Java icon and label -->
+        <div style="text-align: center;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java icon" style="width: 64px; height: 64px;">
+          <div style="margin-top: 8px; font-size: 1.1em;">Java</div>
+        </div>
+      </div>
+      <!-- Python libraries listed below, spaced out -->
+      <div style="text-align: center; font-size: 1em; margin-top: 18px;">
+        <strong>Python Libraries:</strong>
+        Numpy, Matplotlib, Pandas
+      </div>
+    </div>
+
+    <!-- Programming languages I'm learning section -->
+    <div class="lang-box">
+      <!-- Make the header bigger for "Programming Languages I'm Learning" -->
+      <h3 style="text-align: center; margin-top: 16px; margin-bottom: 23px; font-size: 1.5em;">
+        Programming Languages I'm Learning
+      </h3>
+      <!-- Horizontal row of languages I'm learning -->
+      <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 18px;">
+        <!-- HTML icon and label -->
+        <div style="text-align: center;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 icon" style="width: 64px; height: 64px;">
+          <div style="margin-top: 8px; font-size: 1.1em;">HTML</div>
+        </div>
+        <!-- CSS icon and label -->
+        <div style="text-align: center;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 icon" style="width: 64px; height: 64px;">
+          <div style="margin-top: 8px; font-size: 1.1em;">CSS</div>
+        </div>
+        <!-- JavaScript icon and label -->
+        <div style="text-align: center;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript icon" style="width: 64px; height: 64px;">
+          <div style="margin-top: 8px; font-size: 1.1em;">JavaScript</div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Links Section at the bottom of the page -->
-  <div class="links">
-    <a href="#">My GitHub</a>
-    <a href="#">My LinkedIn</a>
-    <a href="#">My Portfolio</a>
+  <div class="links" id="links" style="margin-top: 36px; text-align: center;">
+    <a href="https://github.com/alvesgp" target="_blank">My GitHub</a>
+    <a href="https://www.linkedin.com/in/giovanna-alves-84495624a" target="_blank">My LinkedIn</a>
+    <a href="#">My Projects</a>
+  </div>
+
+  <!-- Contact information below the buttons, no border or button style -->
+  <div style="margin-top: 28px; margin-bottom: 32px; text-align: center; font-size: 1.1em;">
+    <!-- Email is just a simple link, not a button -->
+    Email: <a href="mailto:alvesgp@vcu.edu">alvesgp@vcu.edu</a>
   </div>
 </body>
 </html>
